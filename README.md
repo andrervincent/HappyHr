@@ -74,6 +74,8 @@ HappyHr is an app that allows users to find bars near by that they will enjoy an
 <img src="(https://i.imgur.com/nLO24ku.png)" width=600>
 
 
+
+![Imgur](https://i.imgur.com/SskWCwv.png)
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
