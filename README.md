@@ -61,12 +61,12 @@ HappyHr is an app that allows users to find bars near by that they will enjoy an
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Authentication View
+   * Sign-up View
+   * Feed/Dashboard View
+* Feed/Dashboard View
+   * Report View
+   * Detail View
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
