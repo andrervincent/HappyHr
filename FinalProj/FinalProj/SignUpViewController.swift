@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignUpViewController: UIViewController {
 
@@ -21,7 +22,26 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onSignUp(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameInputField.text
+        user.password = passwordInputField.text
+        user.email = emailInputField.text
+        user["firstName"] = firstNameField.text
+        user["lastName"] = lastNameField.text
+        
+        
+        user.signUpInBackground { (success, fail) in
+            if success {
+                self.performSegue(withIdentifier: "EnterSegue", sender: nil)
+            }
+            else {
+                print("Error: \(fail?.localizedDescription)")
+            }
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 
