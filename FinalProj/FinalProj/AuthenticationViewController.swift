@@ -18,7 +18,7 @@ class AuthenticationViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+    // For users with an account, if input is valid, show them the feed
     @IBAction func onLogin(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
@@ -33,10 +33,11 @@ class AuthenticationViewController: UIViewController {
             }
         }
     }
-    
+    // Navigate to the SignUp View when "Sign-up" is selected
     @IBAction func onSignUp(_ sender: Any) {
         self.performSegue(withIdentifier: "SignUpSegue", sender: nil)
     }
+    // If user doesn't want to authenticate, allow them to navigate to the dashboard
     @IBAction func enterWithoutAuth(_ sender: Any) {
         PFAnonymousUtils.logIn {
             (user, error)  in
