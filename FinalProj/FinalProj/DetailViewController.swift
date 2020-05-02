@@ -5,28 +5,33 @@
 //  Created by Andre Vincent on 4/11/20.
 //  Copyright © 2020 Andre Vincent. All rights reserved.
 //
-
+/*
+ Detail view is not a page with interaction,
+it only serves to show the progress */
 import UIKit
-
-class DetailViewController: UIViewController {
-
-    @IBOutlet weak var imageField: UIImageView!
-    @IBOutlet weak var locationName: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+import Parse
+class DetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // return the number of reports in the database
+        return reports.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // select what types of information needs to be in each cell and go forth from there
+        //let cell = ReportsTable.dequeueReusableCell(withIdentifier: "Report") as! ReportCell
+        return cell
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var imageField: UIImageView!
+    @IBOutlet weak var locationName: UILabel!
+    @IBOutlet weak var ReportsTable: UITableView!
+    let reports = [PFObject]()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        ReportsTable.dataSource = self
+        ReportsTable.delegate = self
+        // Do any additional setup after loading the view.
     }
-    */
-
+    
 }
