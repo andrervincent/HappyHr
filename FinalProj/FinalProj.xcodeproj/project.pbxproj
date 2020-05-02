@@ -16,6 +16,7 @@
 		1A5C30A6242C6DC400B1C2F4 /* FinalProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C30A5242C6DC400B1C2F4 /* FinalProjUITests.swift */; };
 		1AD4C3C02442BB92006D218B /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4C3BF2442BB92006D218B /* AuthenticationViewController.swift */; };
 		1AD4C3C22442C4EB006D218B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4C3C12442C4EB006D218B /* SignUpViewController.swift */; };
+		203845272450AC6B00F1C82F /* BarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203845262450AC6B00F1C82F /* BarInfo.swift */; };
 		20FF16852443C9B70011EE65 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF16842443C9B70011EE65 /* ReportViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		1A5C30A7242C6DC400B1C2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AD4C3BF2442BB92006D218B /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		1AD4C3C12442C4EB006D218B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		203845262450AC6B00F1C82F /* BarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarInfo.swift; sourceTree = "<group>"; };
 		20FF16842443C9B70011EE65 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				1AD4C3C12442C4EB006D218B /* SignUpViewController.swift */,
 				1A3C58F62442D486005998CF /* DetailViewController.swift */,
 				20FF16842443C9B70011EE65 /* ReportViewController.swift */,
+				203845262450AC6B00F1C82F /* BarInfo.swift */,
 			);
 			path = FinalProj;
 			sourceTree = "<group>";
@@ -150,6 +153,8 @@
 			dependencies = (
 			);
 			name = FinalProj;
+			packageProductDependencies = (
+			);
 			productName = FinalProj;
 			productReference = 1A5C3082242C6DC100B1C2F4 /* FinalProj.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +227,8 @@
 				Base,
 			);
 			mainGroup = 1A5C3079242C6DC100B1C2F4;
+			packageReferences = (
+			);
 			productRefGroup = 1A5C3083242C6DC100B1C2F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,6 +277,7 @@
 				1A5C3086242C6DC100B1C2F4 /* AppDelegate.swift in Sources */,
 				20FF16852443C9B70011EE65 /* ReportViewController.swift in Sources */,
 				1A3C58F72442D486005998CF /* DetailViewController.swift in Sources */,
+				203845272450AC6B00F1C82F /* BarInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +460,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Vincent.FinalProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -469,7 +477,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Vincent.FinalProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

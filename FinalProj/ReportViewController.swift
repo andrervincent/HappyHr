@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import Cosmos
+import TinyConstraints
 
 class ReportViewController: UIViewController {
     
@@ -17,11 +19,22 @@ class ReportViewController: UIViewController {
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var questionField: UILabel!
     
-   
-       
-    
+    lazy var cosmosView: CosmosView = {
+        var view = CosmosView()
+        return view
+    }()
     
     override func viewDidLoad() {
+        
+        
+        
+        super.viewDidLoad()
+        
+        view.backgroundColor = .white
     
+        view.addSubview(cosmosView)
+     
+        cosmosView.centerInSuperview()
 }
 }
+
