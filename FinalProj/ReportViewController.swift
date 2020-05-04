@@ -21,6 +21,19 @@ class ReportViewController: UIViewController {
     
     lazy var cosmosView: CosmosView = {
         var view = CosmosView()
+        
+        view.settings.filledImage = UIImage(named: "RatingStarFilled")?.withRenderingMode(.alwaysOriginal)
+        view.settings.emptyImage = UIImage(named: "RatingStarEmpty")?.withRenderingMode(.alwaysOriginal)
+        
+        view.settings.totalStars = 5
+        view.settings.starSize = 17
+        view.settings.starMargin = 3.3
+        view.settings.fillMode = .full
+        view.text = "Rating"
+        view.settings.textColor = .red
+        view.settings.textMargin = 10
+        
+        
         return view
     }()
     
@@ -35,6 +48,10 @@ class ReportViewController: UIViewController {
         view.addSubview(cosmosView)
      
         cosmosView.centerInSuperview()
+        
+        cosmosView.didTouchCosmos = {rating in
+            print("Rated: \(rating)")
+        }
 }
 }
 
