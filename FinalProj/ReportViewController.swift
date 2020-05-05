@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Cosmos
 import TinyConstraints
+//import StoreKit
 
 class ReportViewController: UIViewController {
     
@@ -19,7 +20,10 @@ class ReportViewController: UIViewController {
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var questionField: UILabel!
     
+    
+
     lazy var cosmosView: CosmosView = {
+         
         var view = CosmosView()
         
         view.settings.filledImage = UIImage(named: "RatingStarFilled")?.withRenderingMode(.alwaysOriginal)
@@ -27,23 +31,24 @@ class ReportViewController: UIViewController {
         
         view.settings.totalStars = 5
         view.settings.starSize = 17
-        view.settings.starMargin = 3.3
-        view.settings.fillMode = .full
+        view.settings.starMargin = 5.0
+        view.settings.fillMode = .precise
+        
         view.text = "Rating"
         view.settings.textColor = .red
         view.settings.textMargin = 10
         
-        
+       
+                
         return view
     }()
     
     override func viewDidLoad() {
         
-        
-        
+                
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+       // view.backgroundColor = .white
     
         view.addSubview(cosmosView)
      
@@ -54,4 +59,6 @@ class ReportViewController: UIViewController {
         }
 }
 }
+
+
 
