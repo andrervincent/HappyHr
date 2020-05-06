@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04C8BAC1674B17CECEC44020 /* Pods_FinalProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5752BF1D4D75B5E38BD83E4A /* Pods_FinalProj.framework */; };
+		1A2C1F1324625D71009CF5F8 /* ReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2C1F1224625D71009CF5F8 /* ReportCell.swift */; };
+		1A2C1F1524626E34009CF5F8 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2C1F1424626E34009CF5F8 /* ReportsViewController.swift */; };
 		1A3C58F72442D486005998CF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3C58F62442D486005998CF /* DetailViewController.swift */; };
 		1A5C3086242C6DC100B1C2F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C3085242C6DC100B1C2F4 /* AppDelegate.swift */; };
 		1A5C308B242C6DC100B1C2F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5C3089242C6DC100B1C2F4 /* Main.storyboard */; };
@@ -16,6 +18,7 @@
 		1A5C309B242C6DC400B1C2F4 /* FinalProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C309A242C6DC400B1C2F4 /* FinalProjTests.swift */; };
 		1A5C30A6242C6DC400B1C2F4 /* FinalProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C30A5242C6DC400B1C2F4 /* FinalProjUITests.swift */; };
 		1A970051244E89E3007D75F2 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A970050244E89E3007D75F2 /* Bar.swift */; };
+		1ACDB24B24624B2B00926F7A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACDB24A24624B2B00926F7A /* FeedViewController.swift */; };
 		1AD4C3C02442BB92006D218B /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4C3BF2442BB92006D218B /* AuthenticationViewController.swift */; };
 		1AD4C3C22442C4EB006D218B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4C3C12442C4EB006D218B /* SignUpViewController.swift */; };
 		20FF16852443C9B70011EE65 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FF16842443C9B70011EE65 /* ReportViewController.swift */; };
@@ -41,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A2C1F1224625D71009CF5F8 /* ReportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCell.swift; sourceTree = "<group>"; };
+		1A2C1F1424626E34009CF5F8 /* ReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
 		1A3C58F62442D486005998CF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1A5C3082242C6DC100B1C2F4 /* FinalProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5C3085242C6DC100B1C2F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		1A5C30A5242C6DC400B1C2F4 /* FinalProjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjUITests.swift; sourceTree = "<group>"; };
 		1A5C30A7242C6DC400B1C2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A970050244E89E3007D75F2 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		1ACDB24A24624B2B00926F7A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1AD3A3160B96A9C95B4388DD /* Pods-FinalProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProj.release.xcconfig"; path = "Target Support Files/Pods-FinalProj/Pods-FinalProj.release.xcconfig"; sourceTree = "<group>"; };
 		1AD4C3BF2442BB92006D218B /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		1AD4C3C12442C4EB006D218B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +138,9 @@
 				1A3C58F62442D486005998CF /* DetailViewController.swift */,
 				20FF16842443C9B70011EE65 /* ReportViewController.swift */,
 				1A970050244E89E3007D75F2 /* Bar.swift */,
+				1ACDB24A24624B2B00926F7A /* FeedViewController.swift */,
+				1A2C1F1224625D71009CF5F8 /* ReportCell.swift */,
+				1A2C1F1424626E34009CF5F8 /* ReportsViewController.swift */,
 			);
 			path = FinalProj;
 			sourceTree = "<group>";
@@ -420,8 +429,11 @@
 				1A970051244E89E3007D75F2 /* Bar.swift in Sources */,
 				1AD4C3C02442BB92006D218B /* AuthenticationViewController.swift in Sources */,
 				1A5C3086242C6DC100B1C2F4 /* AppDelegate.swift in Sources */,
+				1A2C1F1524626E34009CF5F8 /* ReportsViewController.swift in Sources */,
 				20FF16852443C9B70011EE65 /* ReportViewController.swift in Sources */,
 				1A3C58F72442D486005998CF /* DetailViewController.swift in Sources */,
+				1ACDB24B24624B2B00926F7A /* FeedViewController.swift in Sources */,
+				1A2C1F1324625D71009CF5F8 /* ReportCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
