@@ -8,23 +8,31 @@
 
 import UIKit
 import Parse
+import Cosmos
+
 class ReportsViewController: UIViewController {
 
     @IBOutlet weak var barName: UITextField!
     @IBOutlet weak var commentField: UITextField!
     @IBOutlet weak var ratingField: UITextField!
+    @IBOutlet weak var starRating: CosmosView!
+    let submissions = PFObject(className: "submissions")
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.addSubview(starRating)
+        starRating.didFinishTouchingCosmos = { rating in
+            self.submissions["starRating"] = rating
+            print(rating)
+        }
     }
     
     @IBAction func onSubmit(_ sender: Any) {
-        let submissions = PFObject(className: "submissions")
-        submissions["barName"] = barName.text
-        submissions["comments"] = commentField.text
-        submissions["rating"] = ratingField.text
-        submissions.saveInBackground { (success, error) in
+        
+        self.submissions["barName"] = barName.text
+        self.submissions["comments"] = commentField.text
+        self.submissions["rating"] = ratingField.text
+        
+        self.submissions.saveInBackground { (success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)
             }
@@ -33,15 +41,5 @@ class ReportsViewController: UIViewController {
             }
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
