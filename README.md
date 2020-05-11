@@ -162,4 +162,4 @@ HappyHr is an app that allows users to find bars near by that they will enjoy an
     Query-> find the bar that matches ID of activeBar in records
     fetch all reviews in activeBar
     ''' 
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+WALKTHROUGH LINK - [click here](https://imgur.com/nFEr7LK)

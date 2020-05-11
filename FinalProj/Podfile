@@ -8,6 +8,7 @@ target 'FinalProj' do
   # Pods for FinalProj
   pod "Parse"
   pod "AlamofireImage"
+  pod 'Cosmos', '~> 21.0'
 
   target 'FinalProjTests' do
     inherit! :search_paths

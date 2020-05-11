@@ -18,8 +18,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // select what types of information needs to be in each cell and go forth from there
-        //let cell = ReportsTable.dequeueReusableCell(withIdentifier: "Report") as! ReportCell
-        return cell
+        let cell = reports.dequeueReusableCell(withIdentifier: "Report")        return cell
     }
     
 
