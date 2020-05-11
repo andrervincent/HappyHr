@@ -163,3 +163,4 @@ HappyHr is an app that allows users to find bars near by that they will enjoy an
     fetch all reviews in activeBar
     ''' 
 WALKTHROUGH LINK - [click here](https://imgur.com/nFEr7LK)
+[narrated walkthrough](https://youtu.be/nE45-hpgCL8)
